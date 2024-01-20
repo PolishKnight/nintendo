@@ -125,10 +125,10 @@ const kaktusArray = [
 ];
 
 const trexImage = new Image();
-trexImage.src = 'https://raw.githubusercontent.com/PolishKnight/nintendo/main/images/trex/trex.png';
+trexImage.src = '/nintendo/images/trex/trex.png';
 
 const kaktusImage = new Image();
-kaktusImage.src = 'https://raw.githubusercontent.com/PolishKnight/nintendo/main/images/trex/kaktus.png';
+kaktusImage.src = '/nintendo/images/trex/kaktus.png';
 
 function drawTrex(){
 
