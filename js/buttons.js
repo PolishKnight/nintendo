@@ -54,7 +54,7 @@ function Power(){
     if(power){
         Stop();
         random = Math.floor(Math.random() * 10) + 1;
-        screen.style.backgroundImage =  'url(' + window.location.origin + 'nintendo/assets/images/background/' + random + '.jpg)';
+        screen.style.backgroundImage =  'url(https://raw.githubusercontent.com/PolishKnight/nintendo/main/images/background/1.jpg)';
         screenContent.style.display = 'block';
     }else{
         screen.style.backgroundImage =  'none';
