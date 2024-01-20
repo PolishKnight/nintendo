@@ -54,7 +54,7 @@ function Power(){
     if(power){
         Stop();
         random = Math.floor(Math.random() * 10) + 1;
-        screen.style.backgroundImage =  'url(window.location.origin + nintendo/assets/images/background/' + random + '.jpg)';
+        screen.style.backgroundImage =  'url(' + window.location.origin + 'nintendo/assets/images/background/' + random + '.jpg)';
         screenContent.style.display = 'block';
     }else{
         screen.style.backgroundImage =  'none';
@@ -125,10 +125,10 @@ const kaktusArray = [
 ];
 
 const trexImage = new Image();
-trexImage.src = 'window.location.origin + nintendo/assets/images/trex/trex.png';
+trexImage.src = window.location.origin + 'nintendo/assets/images/trex/trex.png';
 
 const kaktusImage = new Image();
-kaktusImage.src = 'window.location.origin + nintendo/assets/images/trex/kaktus.png';
+kaktusImage.src = window.location.origin + 'nintendo/assets/images/trex/kaktus.png';
 
 function drawTrex(){
 
@@ -304,7 +304,7 @@ aplications[2].addEventListener('click', function(){
     memoryBoard.style.display = 'grid';
     Losowanie();
     for (let i = 0; i < memory.length; i++){
-        memorCard[i].innerHTML = '<img src="window.location.origin + nintendo/assets/images/memory/logo.png" alt="Logo">';
+        memorCard[i].innerHTML = '<img src="' + window.location.origin + 'nintendo/assets/images/memory/logo.png" alt="Logo">';
     }
 
 });
@@ -320,8 +320,8 @@ for (let i = 0; i < memory.length; i++) {
             }else{
                 liczbaTur++;
                 if(otwarteValue[0] != otwarteValue[1]){
-                    memorCard[otwarte[0]].innerHTML = '<img src="window.location.origin + nintendo/assets/images/memory/logo.png" alt="Logo">';
-                    memorCard[otwarte[1]].innerHTML = '<img src="window.location.origin + nintendo/assets/images/memory/logo.png" alt="Logo">';
+                    memorCard[otwarte[0]].innerHTML = '<img src="' + window.location.origin + 'nintendo/assets/images/memory/logo.png" alt="Logo">';
+                    memorCard[otwarte[1]].innerHTML = '<img src="' + window.location.origin + 'nintendo/assets/images/memory/logo.png" alt="Logo">';
                 }else{
                     odkryte.push(otwarteValue[0]);
                 }
@@ -361,21 +361,21 @@ function ListaMemorow(arr, target) {
 function DodanieImg(element){
     switch (element) {
         case 1:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/lub.png" alt="Lublin">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/lub.png" alt="Lublin">';
         case 2:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/wro.png" alt="Wrocław">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/wro.png" alt="Wrocław">';
         case 3:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/tor.png" alt="Toruń">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/tor.png" alt="Toruń">';
         case 4:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/cze.png" alt="Częstochowa">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/cze.png" alt="Częstochowa">';
         case 5:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/gor.png" alt="Gorzów">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/gor.png" alt="Gorzów">';
         case 6:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/les.png" alt="Leszno">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/les.png" alt="Leszno">';
         case 7:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/gru.png" alt="Grudziądz">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/gru.png" alt="Grudziądz">';
         case 8:
-            return '<img src="window.location.origin + nintendo/assets//images/memory/zie.png" alt="Zielona Góra">';
+            return '<img src="' + window.location.origin + 'nintendo/assets//images/memory/zie.png" alt="Zielona Góra">';
     }
 }
 
